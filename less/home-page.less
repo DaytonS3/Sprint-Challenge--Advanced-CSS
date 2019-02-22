@@ -5,7 +5,7 @@
   .intro {
 
     h2 {
-      padding: 15px;
+      .padding();
     }
 
     p {
@@ -28,7 +28,7 @@
   }
 
   .visit-planets {
-    padding: 15px;
+    .padding();
 
     h3 {
       margin-top: 11px;
@@ -57,9 +57,29 @@
         margin-bottom: 26px;
       }
 
-      .btn {
-      }
+      .signup-btn(@width: 80px, @bg: black, @color: white){
+        background: @bg;
+        color: @color;
+        width: @width;
+        height: 25px;
+        border-radius: 15%;
     }
+
+      button {
+        .signup-btn();
+
+        &:hover {
+          background: white;
+          color: black;
+        }
+      }
+
+    } 
+
+      
+
+      
+    
 
     .walk-img {
       width: 46%;
