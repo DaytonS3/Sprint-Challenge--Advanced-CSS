@@ -195,7 +195,12 @@ footer {
   align-items: center;
 }
 .home {
-  padding: 10px;
+  padding: 30px;
+}
+@media ( max-width: 500px ) {
+  .home {
+    padding: 0px;
+  }
 }
 .home .intro h2 {
   padding: 15px;
