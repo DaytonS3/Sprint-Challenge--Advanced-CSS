@@ -298,3 +298,57 @@ footer {
   height: auto;
   border-radius: 10px;
 }
+.home .walk .walk-img .signup-form {
+  width: 100%;
+  padding: 16px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 5px;
+}
+.home .walk .walk-img .signup-form form {
+  padding-bottom: 20px;
+}
+.home .walk .walk-img .signup-form form p {
+  color: white;
+}
+.home .walk .walk-img .signup-form form input {
+  width: 100%;
+  height: 50px;
+}
+.home .walk .walk-img .signup-form button {
+  background: white;
+}
+.home .walk .walk-img .signup-form select {
+  background: white;
+}
+.home .signup-form {
+  width: 100%;
+  padding: 16px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 5px;
+}
+.home .signup-form form {
+  padding-bottom: 20px;
+}
+.home .signup-form form p {
+  color: white;
+}
+.home .signup-form form input {
+  width: 100%;
+  height: 50px;
+}
+.home .signup-form button {
+  background: white;
+}
+.home .signup-form select {
+  background: white;
+}
