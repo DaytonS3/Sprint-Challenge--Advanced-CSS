@@ -1,15 +1,27 @@
 // Home Content
 
 .home {
+  padding: 30px;
+
+  @media @phone {
+    padding: 0px;
+  }
+
+ 
+  
 
   .intro {
 
     h2 {
-      padding: 15px;
+      .padding();
     }
 
     p {
       padding:0 15px;
+    }
+
+    img {
+      width: 100%;
     }
   
   }
@@ -19,16 +31,31 @@
     flex-wrap: wrap;
     width: 100%;
 
+    @media @phone {
+      flex-direction: column-reverse;
+
+      #sky{display: none;}
+      #blast{display: none;}
+    }
+
     img {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+
+      
+
+      @media @phone {
+        width: 90%;
+        margin: 10px 15px;
+
+      }
     }
   }
 
   .visit-planets {
-    padding: 15px;
+    .padding();
 
     h3 {
       margin-top: 11px;
@@ -46,8 +73,17 @@
     display: flex;
     justify-content: center;
 
+    @media @phone{
+      flex-direction: column-reverse;
+      padding: 10px;
+    }
+
     .walk-text {
       width: 50%;
+
+      @media @phone {
+        width: 100%;
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -57,19 +93,91 @@
         margin-bottom: 26px;
       }
 
-      .btn {
-      }
+      .signup-btn(@width: 90px, @height: 30px, @bg: black, @color: white){
+        background: @bg;
+        color: @color;
+        width: @width;
+        height: @height;
+        border-radius: 5%;
     }
+
+      button {
+        .signup-btn();
+
+        &:hover {
+          background: white;
+          color: black;
+        }
+
+        @media @phone{
+          .signup-btn(100%, 50px, black, white);
+            
+          
+        }
+      }
+
+    } 
+
+      
+
+      
+    
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
+
+      @media @phone {
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 5px;
+      }
       
       img {
         width: 100%;
         height: auto;
         border-radius: 10px;
-      }
+      }      
     }
   }
+
+  .signup-form {
+    width: 100%;
+    padding: 16px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: black;
+    display: flex;  
+    flex-direction: column;
+    text-align: center;
+    
+
+    form {
+      padding-bottom: 20px;
+
+      p{
+        color: white;
+      }
+
+      input{
+        width: 100%;
+        height: 50px;
+      }
+    }
+
+
+
+    select {
+      background: white;
+    }
+
+  }
+
+  footer{
+    width: 80%;
+    background: lightgoldenrodyellow;
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+
 }// home
